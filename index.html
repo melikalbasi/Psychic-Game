@@ -1,77 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Psychic Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="game.js"></script>
+    
 </head>
+
 <body>
-  <!-- ### Psychic Game  -->
+    <!-- ### Psychic Game  -->
 
-<!-- * The games asks to guess what letter the computer is thinking of -->
-<div>
-    <p id="directions">Guess what letter I'm thinking of...</p>
-    <p id="userchoice"></p>
-    <p id="wins"></p>
-    <p id="losses"></p>
-    <p id="guesses-left"></p>
-    <p id="guesses-made"></p>
-</div>
-
-<script>
-// * The options are the letters of the alphabet
-var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
-// Create variables that hold references to the places in the HTML where we want to display things
-var directionsText = document.getElementById("directions");
-var userChoice = document.getElementById("userchoice");
-var winsText = document.getElementById("wins");
-var lossesText = document.getElementById("losses");
-var guessesLeft = document.getElementById("guesses-left");
-var guessesMade = document.getElementById("guesses-made");
-
-// * The game starts with Wins and Losses at 0 and 9 lives
-var wins = 0;
-var losses = 0;
-var lives = 9;
-
-// * The game begins when the user clicks a key 
-document.onkeyup = function(event) {
-
-// * When the user clicks any alphabet key, the computer will populate a win or a loss based on whether the user guessed correctly
-
-     var userGuess = event.key;
-
-// * Computer makes a selection from the array
- ******   var computerSelect = computerChoices[Math.floor(Math.random() * ())]
-
-// * All guesses are logged "Your Guesses so far"
-
-// * If user guesses wrong, the losses goes up by 1 and the lives go down by 1. If user guesses right, the wins go up by 1 
-if (userGuess === computerChoices) {
-
-    if (userGuess === computerSelect) {
-        wins++;
-    } else {
-        losses++
-    }
-
-
-// * After every win, the computer will select a new letter
-
-// * Display wins and losses 
-guessesMade.textContent = "Your Guesses so far: " + userGuess;
-winsText.textContent = "wins: " + wins;
-lossesText.textContent = "losses: " + losses;
-guessesLeft.textContent = "Lives: " + lives;
-
-}
-}
-</script>
+    <!-- * The games asks to guess what letter the computer is thinking of -->
+    <div>
+        <p id="directions">Guess what letter I'm thinking of...</p>
+        <p id="userchoice"></p>
+        <p id="wins"></p>
+        <p id="losses"></p>
+        <p id="guesses-left"></p>
+        <p id="guesses-made"></p>
+    </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
-
-
