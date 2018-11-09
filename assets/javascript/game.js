@@ -20,7 +20,7 @@
          losses = 0;
          lives = 9;
 
-
+    // * Computer makes a selection from the array
      computerSelect = computerChoices[Math.floor(Math.random() * computerChoices.length)]
      console.log(computerSelect);
      }
@@ -35,7 +35,7 @@
 
          var userGuess = event.key;
          userChoiceArray.push(userGuess)
-         // * Computer makes a selection from the array
+         
 
 
          // * All guesses are logged "Your Guesses so far"
