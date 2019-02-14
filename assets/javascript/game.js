@@ -4,7 +4,6 @@ var userChoiceArray = [];
 
 // Create variables that hold references to the places in the HTML where we want to display things
 var directionsText = document.getElementById("directions");
-var userChoice = document.getElementById("userchoice");
 var winsText = document.getElementById("wins");
 var lossesText = document.getElementById("losses");
 var guessesLeft = document.getElementById("guesses-left");

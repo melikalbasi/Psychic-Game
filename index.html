@@ -8,29 +8,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Monoton|Nova+Mono|Rubik+Mono+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-  <!-- ### Psychic Game  -->
 
-  <!-- * The games asks to guess what letter the computer is thinking of -->
-  <div>
-    <div class="title">
-      <p id="header">Psychic Game</p>
-    </div>
-    <div class="game">
-      <p id="directions">Guess what letter I'm thinking of...</p>
-      <p id="directions">Press any letter on your keyboard to begin!</p>
-    </div>
-    <div class="stats">
-      <p id="userchoice"></p>
-      <span id="wins"></span>
-      <span id="losses"></span>
-      <br>
-      <p id="guesses-left"></p>
-      <p id="guesses-made"></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title">
+          <p id="header">Psychic Game</p>
+        </div>
+      </div>
     </div>
 
+    <div class="row">
+      <div class="col-lg-12">
+          <div class="game">
+              <p id="directions">Guess what letter I'm thinking of...</p>
+              <p id="directions">Press any letter on your keyboard to begin!</p>
+            </div>
+      </div>
+      <div class="col-lg-5 stats text-right">
+          <p id="wins"></p>
+          <p id="losses"></p>
+      </div>
+      <div class="col-lg-2">
+      </div>
+      <div class="col-lg-5 stats">
+          <p id="guesses-left"></p>
+          <p id="guesses-made"></p>
+      </div>  
+    </div>
   </div>
   <script src="assets/javascript/game.js"></script>
 </body>

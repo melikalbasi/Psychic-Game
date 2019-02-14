@@ -1,5 +1,4 @@
 body {
-	width: 50%;
 	margin: auto;
 	color: rgb(255, 227, 167);
 	font-family: 'Rubik Mono One', sans-serif;
@@ -15,7 +14,7 @@ body {
 }
 
 .game {
-	margin-top: 400px;
+	margin-top: 450px;
 	font-size: 18px;
 }
 
@@ -33,4 +32,8 @@ body {
 .stats {
 	font-family: 'Nova Mono', monospace;
 	font-size: 20px;
+}
+
+* {
+	color: rgb(255, 227, 167);
 }
