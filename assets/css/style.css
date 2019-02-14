@@ -1,9 +1,36 @@
 body {
-	width: 100wh;
-	height: 90vh;
+	width: 50%;
+	margin: auto;
 	color: rgb(255, 227, 167);
-	font-family: fantasy;
-	background: linear-gradient(-45deg,#ee76ee, rgb(22, 196, 114), rgb(255, 215, 107), rgba(231, 68, 39, 0.637));
-	background-size: 400% 400%;
-	overflow: hidden;
+	font-family: 'Rubik Mono One', sans-serif;
+	background-image: url('../images/photo-1536574241379-64089233bd12.jpeg');
+	background-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.title {
+	text-align: center;
+}
+
+.game {
+	margin-top: 400px;
+	font-size: 18px;
+}
+
+
+#directions {
+	font-family: 'Rubik Mono One', sans-serif;
+	text-align: center;
+}
+
+#header {
+	font-family: 'Monoton', cursive;
+	font-size: 40px;
+}
+
+.stats {
+	font-family: 'Nova Mono', monospace;
+	font-size: 20px;
 }

@@ -2,26 +2,37 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Psychic Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Psychic Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Nova+Mono|Rubik+Mono+One" rel="stylesheet">
 </head>
 
 <body>
-    <!-- ### Psychic Game  -->
+  <!-- ### Psychic Game  -->
 
-    <!-- * The games asks to guess what letter the computer is thinking of -->
-    <div>
-        <p id="directions">Guess what letter I'm thinking of...</p>
-        <p id="userchoice"></p>
-        <p id="wins"></p>
-        <p id="losses"></p>
-        <p id="guesses-left"></p>
-        <p id="guesses-made"></p>
+  <!-- * The games asks to guess what letter the computer is thinking of -->
+  <div>
+    <div class="title">
+      <p id="header">Psychic Game</p>
     </div>
-    <script src="assets/javascript/game.js"></script>
+    <div class="game">
+      <p id="directions">Guess what letter I'm thinking of...</p>
+      <p id="directions">Press any letter on your keyboard to begin!</p>
+    </div>
+    <div class="stats">
+      <p id="userchoice"></p>
+      <span id="wins"></span>
+      <span id="losses"></span>
+      <br>
+      <p id="guesses-left"></p>
+      <p id="guesses-made"></p>
+    </div>
+
+  </div>
+  <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
