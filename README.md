@@ -9,6 +9,7 @@ You can play the game [here](https://melikalbasi.github.io/psychic-game/)!
 
 ## Built With
 [Javascript](https://jquery.com/) - programming language
+[Bootstrap](https://getbootstrap.com/) - CSS library used
 [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - styling applied
 
 ## Authors
